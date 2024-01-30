@@ -1,0 +1,181 @@
+.body {
+  background-image: url("./pexels-pixabay-531880.jpg");
+  background-size: cover;
+}
+
+#search {
+  width: 500px;
+  padding: 10px;
+  background: transparent;
+  border: 2px solid black;
+  border-radius: 20px 0 0 20px;
+  font-size: 20px;
+  color: black;
+}
+
+#search::placeholder {
+  font-size: 20px;
+  color: black;
+}
+
+.inputbox {
+  display: flex;
+  justify-content: center;
+}
+
+.inputbox button {
+  width: 100px;
+  background: none;
+  border: 2px solid black;
+  border-radius: 0 20px 20px 0;
+  color: black;
+  font-size: 18px;
+}
+
+.inputbox button:hover {
+  background: rgba(128, 128, 128, 0.466);
+}
+
+
+.cardm {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 46.64%;
+  left: 50%;
+}
+
+.card {
+  position: absolute;
+  width: 400px;
+  height: 150px;
+  border-radius: 25px;
+  background: whitesmoke;
+  color: black;
+  transition: .4s ease-in-out;
+}
+
+.weather {
+  position: relative;
+  margin: 1em;
+}
+
+.main {
+  font-size: 2em;
+  position: relative;
+  top: -3em;
+  left: 4.3em;
+}
+
+.mainsub {
+  position: relative;
+  top: -85px;
+  left: 140px;
+  font-size: 15px;
+}
+
+.card2 {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 320px;
+  height: 150px;
+  border-radius: 35px;
+  background: white;
+  z-index: -1;
+  transition: .4s ease-in-out;
+}
+
+.card:hover {
+  background-color: #FFE87C;
+  cursor: pointer;
+}
+
+.card:hover+.card2 {
+  height: 300px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.card:hover+.card2 .lower {
+  top: 20.2em;
+}
+
+.upper {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  color: black;
+  left: 1.8em;
+  top: 0.5em;
+  gap: 4em;
+}
+
+.humiditytext {
+  position: relative;
+  left: 45px;
+  top: 25px;
+}
+
+.airtext {
+  position: relative;
+  left: 43px;
+  top: 25px;
+}
+
+.lower {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  color: black;
+  left: 3em;
+  top: 1em;
+  margin-top: 0.7em;
+  font-size: 0.7em;
+  transition: .4s ease-in-out;
+}
+
+.aqi {
+  margin-right: 3.25em;
+}
+
+.realfeel {
+  margin-right: 50px;
+}
+
+.airtext {
+  font-size: 15px;
+}
+
+.realfeeltext {
+  font-size: 15px;
+}
+
+.humiditytext {
+  font-size: 15px;
+}
+
+.pressuretext {
+  font-size: 15px;
+}
+
+
+
+.card3 {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 30px;
+  top: 4.7em;
+  left: -2.4em;
+  color: white;
+  font-size: 1.24em;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background: limegreen;
+  transition: .4s ease-in-out;
+}
